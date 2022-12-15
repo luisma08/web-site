@@ -1,0 +1,49 @@
+.nav{
+    position: relative;
+    --translate-list-header: 100%;
+    --scale-menu:1;
+    --scale-close:0;
+    border: 0.5rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+
+    &:target{
+        --translate-list-header: 0; /* --test valor de la variable */
+        --scale-menu:0;
+        --scale-close:1;
+
+        @include desktop{
+            --scale-close: 0;
+        }
+    }
+    
+    &__logo{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+    }
+    
+    &__icon{
+        position: absolute;
+        right: var(--padding-container);
+        color: var(--primary-text-color);
+        font-size: 1.75rem;
+        text-decoration: none;
+        transition: transform 0.25s;
+
+        &--menu{
+            transform: scale(var(--scale-menu));
+        }
+        
+        &--close{
+            transform: scale(var(--scale-close));
+        }
+    }
+
+    @include desktop{
+        --translate-list-header: 0;
+        --scale-menu:0;
+    }
+}

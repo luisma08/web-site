@@ -1,0 +1,74 @@
+.form{
+    background-color: var(--secondary-text-color);
+    padding: 1.125rem;
+    box-shadow: 0 0 0.125rem var(--primary-shadow-color),
+    0 0 0.25rem var(--primary-shadow-color);
+    border-radius: var(--primary-border-radius);
+    border: 0.125rem solid var(--reverse-primary-border-color);
+    max-width: 360px;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: --primary-font-family;
+
+    &__img{
+        max-width: 360px;
+
+        @include desktop{
+            max-width: 450px;
+        }
+    }
+    
+    &__legend{
+        color: var(--primary-text-color);
+        font-size: var(--primary-text-font-size);
+        margin: 0;
+    }
+    
+    &__label{
+        font-size: var(--primary-text-font-size);
+        color: var(--primary-text-color);
+    }
+    
+    &__input, &__textarea{
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.5rem;
+    }
+    
+    &__input, &__input::placeholder, &__textarea::placeholder{
+        font-size: var(--nav-primary-font-size);
+    }
+    
+    &__input:focus, &__textarea:focus{
+        border: 5px solid var(--secondary-highlight-color);
+    }
+    
+    &__button{
+        display: flex;
+        justify-content: end;
+    }
+    
+}
+
+.bg-color{
+    @include desktop{
+        background-color: var(--primary-theme-color);
+        box-shadow: 0 0 0.125rem var(--primary-shadow-color),
+        0 0 0.25rem var(--primary-shadow-color);
+        border-radius: var(--primary-border-radius);
+        overflow: hidden;
+        transition: box-shadow 0.25s;
+        padding: 2rem 0 3rem 0rem;
+        box-sizing: border-box;
+    }
+
+    &:hover {
+        box-shadow: 0 0 0.25rem 0 var(--primary-highlight-color);
+      }
+}
+
+.contact__title{
+    @include desktop{
+        color: var(--primary-text-color);
+    }
+}

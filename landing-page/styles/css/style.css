@@ -1,0 +1,17 @@
+@import './modules/variables.css';
+
+.body{
+    font-family: var(--primary-font-family);
+    margin: 0;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.header__title,
+.nav-list,
+.banner__container{
+    padding: 1rem 1rem;
+    margin: 0;
+}
