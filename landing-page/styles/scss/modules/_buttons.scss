@@ -7,9 +7,10 @@
     text-decoration: none;
     font-weight: 600;
     font-family: var(--primary-font-family);
-    padding: 0.25em 1em;
+    padding: 0.563rem 1.25rem;
     cursor: pointer;
     transition: box-shadow 0.25s, filter 0.25s;
+    text-transform: uppercase;
 
     &:hover{
         box-shadow: 0 0 0.125rem 0.125rem var(--primary-theme-color);

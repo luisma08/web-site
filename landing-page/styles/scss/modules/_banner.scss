@@ -1,7 +1,10 @@
 .banner{
-    background-image: url("../../../assets/img/webp/Promos-marzoDW.webp");
+    /*
+    background-image: url("../../assets/img/webp/banner-1.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background: rgb(220,0,88);
+background: linear-gradient(90deg, rgba(220,0,88,0.8463760504201681) 0%, rgba(220,0,88,1) 10%, rgba(220,0,88,0.835171568627451) 100%);
     box-sizing: border-box;
     margin-top: 2rem;
 
@@ -12,21 +15,42 @@
         align-items: center;
         gap: 1.5rem;
         height: 20rem;
-        background-color: rgba(0, 0, 0, .7);
+        text-align: center;
+        padding: var(--padding-container);
+        
+        @include desktop{
+            height: 31rem;
+            align-items: flex-start;
+            padding-right: 25rem;
+            padding-left: 3rem;
+            text-align: start;
+        }
     }
     
     &__title, &__description{
         margin: 0;
-        color: white;
+        text-transform: uppercase;
     }
     
     &__title{
         font-size: 2rem;
-        text-align: center;
+        color: var(--third-text-color);
+
+        @include desktop{
+            font-size: 3rem;
+        }
+        &-span{
+            color: var(--span-text-color);
+
+            @include desktop{
+                font-size: 3.438rem;
+            }
+        }
     }
     
     &__description{
         font-size: 1.2rem;
+        color: var(--reverse-primary-text-color);
     }
 }
 

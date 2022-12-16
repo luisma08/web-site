@@ -48,17 +48,43 @@
   padding-bottom: var(--padding-section);
 }
 .section__title {
-  font-size: 1.5rem;
-  text-shadow: 0 0 0.125rem var(--primary-highlight-color), 0 0 0.25rem var(--primary-highlight-color);
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .section__title {
+    font-size: 3.125rem;
+  }
+}
+.section__description {
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .section__description {
+    font-size: 2.5rem;
+  }
+}
+.section__title, .section__description {
+  color: var(--primary-p-color);
   text-align: center;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .section__title, .section__description {
+    text-align: start;
+  }
+}
 
 .container {
-  max-width: var(--max-width-container);
+  max-width: auto;
   margin: 0 auto;
   padding-left: var(--padding-container);
   padding-right: var(--padding-container);
+}
+@media (min-width: 768px) {
+  .container {
+    padding-left: var(--padding-responsive);
+    padding-right: var(--padding-responsive);
+  }
 }
 
 .f-elements {
@@ -227,9 +253,12 @@
 }
 
 .banner {
-  background-image: url("../../../assets/img/webp/Promos-marzoDW.webp");
+  /*
+  background-image: url("../../assets/img/webp/banner-1.webp");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
+  background: rgb(220, 0, 88);
+  background: linear-gradient(90deg, rgba(220, 0, 88, 0.8463760504) 0%, rgb(220, 0, 88) 10%, rgba(220, 0, 88, 0.8351715686) 100%);
   box-sizing: border-box;
   margin-top: 2rem;
 }
@@ -240,18 +269,42 @@
   align-items: center;
   gap: 1.5rem;
   height: 20rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: var(--padding-container);
+}
+@media (min-width: 768px) {
+  .banner__container {
+    height: 31rem;
+    align-items: flex-start;
+    padding-right: 25rem;
+    padding-left: 3rem;
+    text-align: start;
+  }
 }
 .banner__title, .banner__description {
   margin: 0;
-  color: white;
+  text-transform: uppercase;
 }
 .banner__title {
   font-size: 2rem;
-  text-align: center;
+  color: var(--third-text-color);
+}
+@media (min-width: 768px) {
+  .banner__title {
+    font-size: 3rem;
+  }
+}
+.banner__title-span {
+  color: var(--span-text-color);
+}
+@media (min-width: 768px) {
+  .banner__title-span {
+    font-size: 3.438rem;
+  }
 }
 .banner__description {
   font-size: 1.2rem;
+  color: var(--reverse-primary-text-color);
 }
 
 .button {
@@ -263,9 +316,10 @@
   text-decoration: none;
   font-weight: 600;
   font-family: var(--primary-font-family);
-  padding: 0.25em 1em;
+  padding: 0.563rem 1.25rem;
   cursor: pointer;
   transition: box-shadow 0.25s, filter 0.25s;
+  text-transform: uppercase;
 }
 .button:hover {
   box-shadow: 0 0 0.125rem 0.125rem var(--primary-theme-color);
@@ -312,14 +366,13 @@
   transition: transform 0.25s;
 }
 .card__services {
-  background-color: var(--primary-highlight-color);
+  border: 0.0125rem solid var(--secondary-border-color);
 }
 .card:hover {
-  box-shadow: 0 0 0.25rem 0 var(--primary-highlight-color);
+  box-shadow: 0 0 0.25rem 0 var(--third-highlight-color);
   transform: scale(1.125);
 }
 .card__header, .card__footer {
-  background-color: var(--reverse-primary-shadow-color);
   padding: 1rem;
 }
 .card__img {
@@ -329,9 +382,9 @@
   object-fit: cover;
 }
 .card__img-icon {
-  width: 8rem;
-  padding: 2rem 0rem;
-  background-color: var(--secondary-highlight-color);
+  width: 13rem;
+  padding: 0rem 0rem;
+  background-color: var(--primary-bg-color);
   color: var(--reverse-primary-text-color);
   border-radius: 50%;
   margin: 2rem auto;
@@ -341,15 +394,14 @@
   padding: 1rem;
 }
 .card__body-services {
-  background-color: none;
-  color: var(--primary-text-color);
+  color: var(--secondary-p-color);
   padding: 1.2rem;
-  border-top: 0.0125rem solid var(--reverse-primary-border-color);
 }
 .card__title {
   font-size: 1.5rem;
   text-align: center;
   margin: 0;
+  font-weight: 700;
 }
 .card__subtitle {
   font-size: 1.25rem;
@@ -431,6 +483,9 @@
   box-shadow: 0 0 0.25rem 0 var(--primary-highlight-color);
 }
 
+.contact__title {
+  font-size: 2rem;
+}
 @media (min-width: 768px) {
   .contact__title {
     color: var(--primary-text-color);

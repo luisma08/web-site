@@ -68,6 +68,7 @@
 }
 
 .contact__title{
+    font-size: 2rem;
     @include desktop{
         color: var(--primary-text-color);
     }

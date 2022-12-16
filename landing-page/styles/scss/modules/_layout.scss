@@ -3,20 +3,41 @@
     padding-bottom: var(--padding-section);
 
     &__title{
-        font-size: 1.5rem;
-        text-shadow: 0 0 0.125rem var(--primary-highlight-color),
-        0 0 0.25rem var(--primary-highlight-color);
-        text-align: center;
-        margin: 0;
+        font-size: 2rem;
+        @include desktop{
+          font-size: 3.125rem;
+        }
       }
+
+    &__description{
+        font-size: 1.25rem;
+        @include desktop{
+          font-size: 2.5rem;
+        }
+    }
+
+    &__title, &__description{
+      color:var(--primary-p-color);
+      text-align: center;
+      margin: 0;
+
+      @include desktop{
+        text-align: start;
+      }
+    }
 
   }
    
   .container {
-    max-width: var(--max-width-container);
+    max-width: auto;
     margin: 0 auto;
     padding-left: var(--padding-container);
-    padding-right: var(--padding-container); 
+    padding-right: var(--padding-container);
+    
+    @include desktop{
+      padding-left: var(--padding-responsive);
+      padding-right: var(--padding-responsive);
+    }
   }
   
   .f-elements{
