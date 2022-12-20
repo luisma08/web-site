@@ -8,6 +8,7 @@
     //transition: transform 0.25s;
 
     &__services {
+      height: 256px;
       border: 0.0125rem solid var(--secondary-border-color);
     }
     
@@ -29,11 +30,11 @@
       object-fit: cover;
       &-icon{
           width: 13rem;
-          padding: 0rem 0rem;
-          background-color: var(--primary-bg-color);
-          color: var(--reverse-primary-text-color);
-          border-radius: 50%;
           margin: 2rem auto;
+          //padding: 0rem 0rem;
+          //background-color: var(--primary-bg-color);
+          //color: var(--reverse-primary-text-color);
+          //border-radius: 50%;
         }
     }
     

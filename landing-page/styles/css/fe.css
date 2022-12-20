@@ -380,6 +380,7 @@
   transition: box-shadow 0.25s;
 }
 .card__services {
+  height: 256px;
   border: 0.0125rem solid var(--secondary-border-color);
 }
 .card:hover {
@@ -396,10 +397,6 @@
 }
 .card__img-icon {
   width: 13rem;
-  padding: 0rem 0rem;
-  background-color: var(--primary-bg-color);
-  color: var(--reverse-primary-text-color);
-  border-radius: 50%;
   margin: 2rem auto;
 }
 .card__body {
