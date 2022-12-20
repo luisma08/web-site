@@ -5,7 +5,7 @@
     max-width: 360px;
     overflow: hidden;
     transition: box-shadow 0.25s;
-    transition: transform 0.25s;
+    //transition: transform 0.25s;
 
     &__services {
       border: 0.0125rem solid var(--secondary-border-color);
@@ -13,7 +13,7 @@
     
     &:hover {
       box-shadow: 0 0 0.25rem 0 var(--third-highlight-color);
-      transform: scale(1.125);
+      //transform: scale(1.125);
     }
     
     &__header,
