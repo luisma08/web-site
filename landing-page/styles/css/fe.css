@@ -378,6 +378,7 @@
   max-width: 360px;
   overflow: hidden;
   transition: box-shadow 0.25s;
+  margin: auto;
 }
 .card__services {
   height: 256px;
