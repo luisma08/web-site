@@ -15,15 +15,12 @@
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
-        height: 20rem;
         text-align: center;
-        padding: var(--padding-container);
+        padding: 3rem 1rem;
         
         @include desktop{
             height: 31rem;
             align-items: flex-start;
-            padding-right: 25rem;
-            padding-left: 3rem;
             text-align: start;
         }
     }
@@ -52,6 +49,21 @@
     &__description{
         font-size: 1.2rem;
         color: var(--reverse-primary-text-color);
+    }
+
+    &__img{
+        margin: 0 auto;
+        padding: 1rem;
+
+        &-hero{
+            max-width: 250px;
+            width: auto;
+
+            @include desktop{
+                max-width: 360px;
+                width: auto;
+            }
+        }
     }
 }
 

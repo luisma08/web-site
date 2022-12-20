@@ -275,16 +275,13 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  height: 20rem;
   text-align: center;
-  padding: var(--padding-container);
+  padding: 3rem 1rem;
 }
 @media (min-width: 768px) {
   .banner__container {
     height: 31rem;
     align-items: flex-start;
-    padding-right: 25rem;
-    padding-left: 3rem;
     text-align: start;
   }
 }
@@ -312,6 +309,20 @@
 .banner__description {
   font-size: 1.2rem;
   color: var(--reverse-primary-text-color);
+}
+.banner__img {
+  margin: 0 auto;
+  padding: 1rem;
+}
+.banner__img-hero {
+  max-width: 250px;
+  width: auto;
+}
+@media (min-width: 768px) {
+  .banner__img-hero {
+    max-width: 360px;
+    width: auto;
+  }
 }
 
 .button {
