@@ -20,6 +20,7 @@
         
         @include desktop{
             height: 31rem;
+            width: 50%;
             align-items: flex-start;
             text-align: start;
         }
@@ -54,15 +55,14 @@
     &__img{
         margin: 0 auto;
         padding: 1rem;
+        max-width: 250px;
+
+        @include desktop{
+            max-width: 100%;
+        }
 
         &-hero{
-            max-width: 250px;
-            width: auto;
-
-            @include desktop{
-                max-width: 360px;
-                width: auto;
-            }
+            width: 100%;
         }
     }
 }

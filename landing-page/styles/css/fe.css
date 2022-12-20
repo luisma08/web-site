@@ -281,6 +281,7 @@
 @media (min-width: 768px) {
   .banner__container {
     height: 31rem;
+    width: 50%;
     align-items: flex-start;
     text-align: start;
   }
@@ -313,16 +314,15 @@
 .banner__img {
   margin: 0 auto;
   padding: 1rem;
-}
-.banner__img-hero {
   max-width: 250px;
-  width: auto;
 }
 @media (min-width: 768px) {
-  .banner__img-hero {
-    max-width: 360px;
-    width: auto;
+  .banner__img {
+    max-width: 100%;
   }
+}
+.banner__img-hero {
+  width: 100%;
 }
 
 .button {
