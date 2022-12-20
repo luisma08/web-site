@@ -4,9 +4,10 @@
     background-repeat: no-repeat;
     background-size: cover;*/
     background: rgb(220,0,88);
-background: linear-gradient(90deg, rgba(220,0,88,0.8463760504201681) 0%, rgba(220,0,88,1) 10%, rgba(220,0,88,0.835171568627451) 100%);
+    background: linear-gradient(90deg, rgba(220,0,88,0.8463760504201681) 0%, rgba(220,0,88,1) 10%, rgba(220,0,88,0.835171568627451) 100%);
     box-sizing: border-box;
-    margin-top: 2rem;
+    //margin-top: 2rem;
+    padding-top: 2rem;
 
     &__container{
         display: flex;

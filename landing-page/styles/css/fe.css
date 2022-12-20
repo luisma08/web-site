@@ -11,6 +11,10 @@
   margin-top: 1rem;
 }
 
+.scroll {
+  background-color: var(--primary-theme-color);
+}
+
 .f-col {
   flex-direction: column;
 }
@@ -136,7 +140,6 @@
 
 .header {
   position: fixed;
-  background-color: var(--primary-theme-color);
   box-shadow: 0 0 0.125rem 0.125rem var(--reverse-primary-shadow-color);
   top: 0;
   left: 0;
@@ -264,7 +267,7 @@
   background: rgb(220, 0, 88);
   background: linear-gradient(90deg, rgba(220, 0, 88, 0.8463760504) 0%, rgb(220, 0, 88) 10%, rgba(220, 0, 88, 0.8351715686) 100%);
   box-sizing: border-box;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 .banner__container {
   display: flex;
